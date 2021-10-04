@@ -503,8 +503,8 @@
   
   .input__field {
     width: 100%;
-    border: 2px solid #999;
-    padding: 5px 10px;
+    border: 1px solid #999;
+    padding: 7px 15px;
     -webkit-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
@@ -512,6 +512,7 @@
     z-index: 1;
     background-color: transparent;
     color: #ffffff;
+    border-radius: 5px;
   }
   
   .input__field.cf-error {
@@ -568,6 +569,7 @@
     line-height: 100%;
     letter-spacing: 1px;
     overflow: hidden;
+    border-radius: 2px;
   }
   
   .btn-main:hover,
@@ -745,7 +747,7 @@
   
   .header-main .image-container {
     position: relative;
-    height: 190px;
+    height: 210px;
     overflow: hidden;
   }
   
@@ -759,7 +761,7 @@
     bottom: 0;
     width: 100%;
     color: #fff;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 700;
     padding: 10px 0;
     text-transform: uppercase;
@@ -1506,7 +1508,7 @@
   .blog-section .blog-item .blog-content {
     padding: 28px 16px 36px;
     text-align: center;
-    width: 82%;
+    width: 95%;
     position: relative;
     background-color: #2c2d2f;
     margin-left: auto;
@@ -1550,7 +1552,11 @@
   .contact-section .contact-info {
     text-align: center;
   }
-  
+  .info-item {
+      background: #464646;
+      padding: 20px;
+    border-radius: 5px;    
+  }
   .contact-section .contact-info .info-item .icon {
     position: relative;
     display: inline-block;
@@ -1911,5 +1917,21 @@
   .business-logo img {
     width: 100%;
     height: auto;
+  }
+
+  /* footer social media */
+  .footer-social-media .social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-social-media .social li{
+      padding: 0px 6px;
+  }
+  .footer-social-media .social a{
+    padding: unset !important;
+  }
+  .footer-social-media .social i{
+      font-size: 26px;
   }
   
