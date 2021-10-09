@@ -831,10 +831,11 @@
     transform: translateX(-50%);
     display: inline-block;
     color: #fff;
-    font-size: 24px;
+    font-size: 25px;
     text-transform: uppercase;
     line-height: 50px;
     white-space: nowrap;
+    font-family: newStyle;
   }
   
   header .header-mobile .header-toggle {
@@ -1065,6 +1066,7 @@
   }
   .about-section .about .about-info ul li span.value {
     font-size: 18px;
+    line-height: 23px;
   }
   
   .about-section .about .about-info ul li span.title:after {
@@ -1847,11 +1849,53 @@
   
   @media screen and (max-width: 767px) {
     header .header-main {
-      left: -200px;
+      left: -240px;
       -webkit-transition: all 0.3s ease-in-out;
       -o-transition: all 0.3s ease-in-out;
       transition: all 0.3s ease-in-out;
     }
+    .banner-section .banner-content p{
+      max-width: 90%;
+    }
+    .mb-70 {
+      margin-bottom: unset !important;
+    }
+    .subheading{
+      display: none;
+    }
+    .contact-sidebar {
+      margin-bottom: 23px;
+    }
+    .contact-sidebar p {
+      font-size: 15px;
+  }
+  #contact-form .row .mb-50{
+    margin-bottom: 10px !important;
+  }
+  #contact-form {
+    margin-bottom: 20px;
+  }
+  .info-item{
+    margin-bottom: 10px;
+    min-height: 90px;
+    padding: 15px;
+    flex-direction: inherit;
+    grid-gap: 10px;
+    align-items: center;
+  }
+  .page-heading{
+    margin-bottom: 15px;
+  }
+  .header-main nav.nav-menu ul li a{
+    font-size: 18px;
+  }
+    .page-heading{
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      grid-gap: 15px;
+    }
+    
     header .header-main h2 {
       display: none !important;
     }
