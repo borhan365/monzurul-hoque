@@ -74,7 +74,7 @@
   
   body {
     font-size: 16px;
-    font-family: poppins, bangla;
+    font-family: poppins, kalpurush;
     line-height: 1.65;
     color: #e1e1e1;
     background-color: #6b6c6d;
@@ -85,7 +85,7 @@
   h4,
   h5,
   h6 {
-    font-family: poppins, bangla;
+    font-family: poppins, kalpurush;
     color: #ffffff;
   }
   
@@ -95,6 +95,7 @@
   
   p {
     line-height: 1.65;
+    font-size: 22px;
   }
   
   img {
@@ -386,7 +387,7 @@
     margin-bottom: 50px;
     margin-top: 50px;
     border-bottom: 1px dashed rgba(255, 255, 255, 0.2);
-    padding-bottom: 10px;
+    padding-bottom: 15px;
   }
   
   .page-heading .icon {
@@ -398,13 +399,13 @@
   
   .page-heading h2 {
     font-size: 36px;
-    font-weight: 700;
     letter-spacing: 1.5px;
     line-height: 1em;
     text-transform: capitalize;
     color: #ffffff;
     position: relative;
     display: inline-block;
+    font-family: newStyle;
   }
   
   .subheading {
@@ -503,15 +504,16 @@
   
   .input__field {
     width: 100%;
-    border: 1px solid #999;
+    /* border: 1px solid #999; */
+    border: unset;
     padding: 7px 15px;
     -webkit-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
     position: relative;
     z-index: 1;
-    background-color: transparent;
-    color: #ffffff;
+    background-color: #0a0b0c63;
+    color: #17181b;
     border-radius: 5px;
   }
   
@@ -1051,16 +1053,18 @@
   }
   
   .about-section .about .about-info ul li span.title {
-    font-family: poppins, bangla;
-    font-size: 16px;
+    
+    font-size: 18px;
     font-weight: 700;
     letter-spacing: 0.5px;
-    border-bottom: 2px solid #ffffff;
     position: relative;
     display: inline-block;
     margin-right: 15px;
     padding-bottom: 1px;
     color: #ffffff;
+  }
+  .about-section .about .about-info ul li span.value {
+    font-size: 18px;
   }
   
   .about-section .about .about-info ul li span.title:after {
@@ -1267,7 +1271,7 @@
     margin-top: 5px;
     margin-bottom: 5px;
     font-size: 12px;
-    font-family: poppins, bangla;
+    
     font-weight: 700;
     text-transform: uppercase;
   }
@@ -1337,7 +1341,7 @@
     display: inline-block;
     font-size: 16px;
     cursor: pointer;
-    font-family: poppins, bangla;
+    
     position: relative;
     color: #e1e1e1;
     text-transform: uppercase;
@@ -1506,33 +1510,29 @@
   }
   
   .blog-section .blog-item .blog-content {
-    padding: 28px 16px 36px;
+    padding: 30px 10px;
     text-align: center;
-    width: 95%;
+    width: 100%;
     position: relative;
     background-color: #2c2d2f;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -40px;
   }
   
   .blog-section .blog-item .blog-content .cat {
     margin-bottom: 7px;
-    text-transform: uppercase;
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 1.5px;
+    font-size: 17px;
   }
   
   .blog-section .blog-item .blog-content .blog-title {
     margin-bottom: 6px;
-    font-size: 21px;
+    font-size: 25px;
     letter-spacing: 0.5px;
     text-transform: capitalize;
   }
   
   .blog-section .blog-item .blog-content .blog-date {
-    font-family: poppins, bangla;
+    
     font-style: italic;
     color: #e1e1e1;
     font-size: 14px;
@@ -1553,9 +1553,14 @@
     text-align: center;
   }
   .info-item {
-      background: #464646;
-      padding: 20px;
-    border-radius: 5px;    
+    background: #464646;
+    padding: 20px;
+    border-radius: 5px;
+    min-height: 190px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: inherit;
+    flex-direction: column;
   }
   .contact-section .contact-info .info-item .icon {
     position: relative;
@@ -1699,7 +1704,7 @@
   }
   
   .ajax-portfolio-popup .single-work .information li span.title {
-    font-family: poppins, bangla;
+    
     font-size: 18px;
     font-weight: 700;
   }
@@ -1757,7 +1762,7 @@
   }
   
   .blog-page .blog-heading .blog-date {
-    font-family: poppins, bangla;
+    
     font-style: italic;
     color: #777;
     font-size: 14px;
@@ -1934,4 +1939,21 @@
   .footer-social-media .social i{
       font-size: 26px;
   }
-  
+  .contact-sidebar p {
+    font-size: 18px;
+  }
+  .contact-social {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    grid-gap: 10px;
+  }
+  .custom-span-contact i {
+    margin-right: 20px;
+  }
+  #cf-submit {
+    float: right;
+    border: unset;
+    background: #a52a2a;
+    padding: 15px 20px;
+  }
